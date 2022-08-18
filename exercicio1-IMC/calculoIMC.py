@@ -1,21 +1,22 @@
-## Calculo MVC
+## Calculo IMC
 
 #importando biblioteca
 from tkinter import *
 from tkinter import ttk
 
 
-#cores 
+#cores para o app
 
 co0 = '#ffffff' #branco
+co1 = '#444466' #preto
+co2 = '#4065a1' #azul
+
+# cores teste 
 #co1 = '#11948C' #verde escuro
 #co2 = '#57FFF4' #verde claro
 
-# cores teste 
-#co1 = '#444466' #preto
-#co2 = '#4065a1' #azul
-co1 = '#7A694E' #cinza
-co2 = '#4CA3FC' #azul
+#co1 = '#7A694E' #cinza
+#co2 = '#4CA3FC' #azul
 
 # janela
 
