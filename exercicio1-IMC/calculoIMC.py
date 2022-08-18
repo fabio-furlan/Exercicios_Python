@@ -48,16 +48,18 @@ def calcular():
     resultado = imc
 
     if resultado < 18.5:
-        print('Seu IMC esta abaixo do peso')
+        l_resultado_texto['text'] = 'Você está abaixo do peso'
+        
     elif resultado >=18.5 and resultado < 25:
-        print('Seu IMC está normal')
+        l_resultado_texto['text'] = 'Seu IMC está normal'
+        
     elif resultado >= 25 and resultado < 30:
-        print('Você está acima do peso.')
-    else:   
-        print('Obesidade')      
+        l_resultado_texto['text'] = 'Você está acima do peso.'
+        
+    else:         
+        l_resultado_texto['text'] = 'Obesidade'
 
-
-    resultado = "{:.{}f}".format(resultado, 2)
+    l_resultado['text'] = "{:.{}f}".format(resultado, 2)
 
     
     
@@ -82,7 +84,7 @@ e_altura.grid(row=3,column=1, sticky=NSEW, pady=10, padx=3)
 l_resultado = Label(frame_baixo,text='---',width=5, height=1, padx=6,pady=32, relief='flat', anchor='center', font=('Ivy 24 bold'),bg=co2,fg=co0)
 l_resultado.place(x=330, y=10)
 
-l_resultado_texto = Label(frame_baixo,text='Seu IMC é: abaixo do peso',width=53, height=1, padx=0,pady=50, relief='flat', anchor='center', font=('Ivy 10 bold'),bg=co0,fg=co1)
+l_resultado_texto = Label(frame_baixo,text='',width=53, height=1, padx=0,pady=50, relief='flat', anchor='center', font=('Ivy 10 bold'),bg=co0,fg=co1)
 l_resultado_texto.place(x=0, y=120)
 
 l_enviar_texto = Label(frame_baixo,text='click aqui para importar',width=53, height=1, padx=0,pady=50, relief='flat', anchor='center', font=('Ivy 10 bold'),bg=co0,fg=co1)
