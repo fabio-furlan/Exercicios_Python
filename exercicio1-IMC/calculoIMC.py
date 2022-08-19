@@ -94,7 +94,7 @@ l_resultado.place(x=330, y=10)
 l_resultado_texto = Label(frame_baixo,text='',width=53, height=1, padx=0,pady=50, relief='flat', anchor='center', font=('Ivy 10 bold'),bg=co0,fg=co1)
 l_resultado_texto.place(x=0, y=120)
 
-l_enviar_texto = Label(frame_baixo,text='click aqui para importar',width=53, height=1, padx=0,pady=50, relief='flat', anchor='center', font=('Ivy 10 bold'),bg=co0,fg=co1)
+l_enviar_texto = Label(frame_baixo,text='click aqui para exportar',width=53, height=1, padx=0,pady=50, relief='flat', anchor='center', font=('Ivy 10 bold'),bg=co0,fg=co1)
 l_enviar_texto.place(x=0, y=200)
 
 b_calcular = Button(frame_baixo, command= calcular,text='Calcular',width=53, height=1,overrelief=SOLID, relief='raised', anchor='center', font=('Ivy 10 bold'),bg=co2,fg=co0)
